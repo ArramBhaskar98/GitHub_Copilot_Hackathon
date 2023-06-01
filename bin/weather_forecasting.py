@@ -1,7 +1,11 @@
 import sys
 from commonlibs import convertTimestamp, getCityWeatherDetails
 
-name = sys.argv[1]
+name = sys.argv[1] if len(sys.argv) > 1 else None
+
+if not name:
+    print("Please Pass the City Name as Command Line Argument to script. Exit Program")
+    exit(1)
 
 # Calling the Weather API
 response = getCityWeatherDetails(name)
