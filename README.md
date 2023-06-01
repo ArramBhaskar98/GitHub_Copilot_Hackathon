@@ -15,4 +15,5 @@ Script Execution Steps :
 2. Run the python script such as - python weather_forecasting.py "Hyderabad" . Here "Hyderabad" is the city name which is a command line argument to python script.
 
 Example 1: python weather_forecasting.py "Hyderabad"
+
 Example 2: python weather_forecasting.py "London"
